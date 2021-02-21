@@ -1,0 +1,55 @@
+ifndef OFFLINE
+	dummy=$(shell git remote update)
+	# Only annotated tags are used for major release (grep {})
+	VERSION_MAJOR := $(shell git ls-remote --tags --quiet | grep {} | wc -l | tr -d ' ' )
+else
+	VERSION_MAJOR := $(shell git for-each-ref refs/tags | grep -v commit | wc -l | tr -d ' ' )
+endif
+
+dummy := $(shell git describe --long --abbrev=40)
+VERSION_TAG := $(word 1, $(subst -, ,$(dummy)))
+VERSION_MINOR := $(word 2, $(subst -, ,$(dummy)))
+VERSION_ID := $(shell echo $(word 3, $(subst -, ,$(dummy))) | cut -c 2-)
+dummy2 := $(word 4, $(subst -, ,$(dummy)))
+
+ifdef dummy2
+	$(error Unexpected git version: $(dummy))
+endif
+
+ifndef VERSION_ID
+	$(error Should have a version ID at this stage)
+endif
+
+ifeq ("$(shell git status -s)$(shell git status -s -b | grep "\[")", "")
+	LOCAL_MODIFICATION := 0
+else
+	LOCAL_MODIFICATION := 1
+endif
+
+ifdef OFFLINE
+	LOCAL_MODIFICATION := 2
+endif
+
+ifeq ($(shell git branch --remotes --contains $(VERSION_ID) | grep origin/master),)
+	VERSION_DEBUG := 1$(LOCAL_MODIFICATION)
+else
+	VERSION_DEBUG := $(LOCAL_MODIFICATION)
+endif
+
+ifneq ("$(TARGET)", "RELEASE")
+	VERSION_DEBUG := 2$(VERSION_DEBUG)
+endif
+
+ifeq ("$(shell uname | grep "NT")", "")
+	VERSION_MAGIC := 0
+	VERSION_MAGIC_CROSSPLATFORM := 0
+else
+	VERSION_MAGIC := 1
+	# Allow windows user to use Unix version code
+	VERSION_MAGIC_CROSSPLATFORM := 0
+endif
+
+
+VERSION_BASE := $(VERSION_MAJOR).$(VERSION_MINOR).$(VERSION_DEBUG)
+VERSION := $(VERSION_BASE).$(VERSION_MAGIC)
+VERSION_CROSSPLATFORM := $(VERSION_BASE).$(VERSION_MAGIC_CROSSPLATFORM)
