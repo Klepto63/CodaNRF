@@ -159,6 +159,7 @@
       <file file_name="nRF5_SDK/components/ble/ble_advertising/ble_hrs_c.c" />
       <file file_name="nRF5_SDK/components/ble/ble_advertising/ble_bas_c.c" />
       <file file_name="nRF5_SDK/components/ble/ble_advertising/ble_nus_c.c" />
+      <file file_name="application/src/drv_led.c" />
     </folder>
     <folder Name="inc">
       <folder Name="spiffs">
@@ -176,6 +177,7 @@
       <file file_name="nRF5_SDK/components/ble/ble_advertising/nrf_ble_gq.h" />
       <file file_name="nRF5_SDK/components/softdevice/common/nrf_sdh_ble.h" />
       <file file_name="nRF5_SDK/components/ble/ble_advertising/ble_nus_c.h" />
+      <file file_name="application/inc/drv_led.h" />
     </folder>
     <folder Name="Example">
       <file file_name="nRF5_SDK/components/libraries/sensorsim/sensorsim.c" />

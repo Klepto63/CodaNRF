@@ -40,11 +40,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="126" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="bootloader/src/bootloader_main.c" selected="0" top="99" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="126" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="bootloader/src/bootloader_main.c" selected="0" top="99" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="111" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF5_SDK/components/libraries/bootloader/dfu/nrf_dfu.c" selected="0" top="94" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="bootloader/config/sdk_config.h" selected="0" top="0" codecName="UTF-8"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF5_SDK/components/libraries/bootloader/nrf_bootloader.c" selected="0" top="33" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="124" useTextEdit="1" openedFrom="C:/Users/alexa/Desktop/izn_nrf/bootloader/src/bootloader_main.c" useBinaryEdit="0" left="0" path="nRF5_SDK/components/libraries/bootloader/nrf_bootloader_info.h" selected="1" top="106" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="127" useTextEdit="1" openedFrom="C:/Users/alexa/Desktop/izn_nrf/bootloader/src/bootloader_main.c" useBinaryEdit="0" left="0" path="nRF5_SDK/components/libraries/bootloader/nrf_bootloader_info.h" selected="1" top="106" codecName="UTF-8"/>
  </Files>
  <ARMCrossStudioWindow activeProject="solarlab_bootloader" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

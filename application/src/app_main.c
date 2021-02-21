@@ -15,6 +15,7 @@
 #include "nrf_sdm.h"
 #include "app_error.h"
 
+#include "drv_led.h"
 
 s_accValue phareAccValue = {0};
 
@@ -45,8 +46,8 @@ void app_main_task(void *pArg)
 {
     DEBUG("MAIN : init");
 
-    //drv_led_init();
-    //drv_led_set(e_ledmodeBlinkFast);
+    drv_led_init();
+    drv_led_set(e_ledmodeBlinkFast);
     //drv_acc_init((t_cb) acc_cb);
     //drv_helmet_init((t_cb) hel_cb);
     

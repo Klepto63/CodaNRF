@@ -87,6 +87,7 @@
 "_build/ble_hrs_c.o"
 "_build/ble_bas_c.o"
 "_build/ble_nus_c.o"
+"_build/drv_led.o"
 "_build/sensorsim.o"
 "_build/ble_bas.o"
 "_build/ble_dis.o"

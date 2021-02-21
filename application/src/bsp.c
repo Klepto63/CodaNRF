@@ -22,6 +22,7 @@ void drv_bsp_init ()
     nrf_drv_power_config_t config = {.dcdcen = 1};
     nrf_drv_power_init(&config);
     nrf_drv_gpiote_init();
+
     nrf_gpio_cfg_output(BNO_RESETn);
     nrf_gpio_pin_set(BNO_RESETn);
 }
