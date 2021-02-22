@@ -8,9 +8,7 @@
 #define SCK_PIN             8
 #define BNO_INT             9
 #define BNO_RESETn          29
-#define LED_PIN             2
-
-
+#define LED_PIN             18
 
 #define LOG(ERR_CODE)                                       \
     do                                                      \
@@ -27,8 +25,6 @@ typedef enum{
 } e_bspEvent;
 
 void  drv_bsp_init();
-
-
 
 #endif
 
