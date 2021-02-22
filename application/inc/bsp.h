@@ -8,7 +8,15 @@
 #define SCK_PIN             8
 #define BNO_INT             9
 #define BNO_RESETn          29
-#define LED_PIN             18
+#define LED_PIN             18 //2
+
+
+#define RX_DBG_PIN              8
+#define TX_DBG_PIN              6
+
+
+
+
 
 #define LOG(ERR_CODE)                                       \
     do                                                      \

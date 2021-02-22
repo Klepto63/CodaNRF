@@ -71,10 +71,17 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="347" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF5_SDK/components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="321" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="94" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF5_SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis.c" selected="0" top="70" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="164" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF5_SDK/components/toolchain/system_nrf52.c" selected="0" top="137" codecName="UTF-8"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="application/src/main.c" selected="1" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="347" useTextEdit="1" useBinaryEdit="0" left="0" path="nRF5_SDK/components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="321" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="94" useTextEdit="1" useBinaryEdit="0" left="0" path="nRF5_SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis.c" selected="0" top="70" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="164" useTextEdit="1" useBinaryEdit="0" left="0" path="nRF5_SDK/components/toolchain/system_nrf52.c" selected="0" top="137" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="16" useTextEdit="1" useBinaryEdit="0" left="0" path="application/src/main.c" selected="1" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="87" y="312" useTextEdit="1" useBinaryEdit="0" left="0" path="nRF5_SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" selected="0" top="268" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="57" useTextEdit="1" useBinaryEdit="0" left="0" path="application/src/app_main.c" selected="0" top="3" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="16" useTextEdit="1" useBinaryEdit="0" left="0" path="application/inc/drv_led.h" selected="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="application/src/drv_led.c" selected="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="32" y="77" useTextEdit="1" useBinaryEdit="0" left="0" path="application/src/drv_uart.c" selected="0" top="45" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" useBinaryEdit="0" left="0" path="application/inc/drv_uart.h" selected="0" top="0" codecName="UTF-8"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="38" useTextEdit="1" useBinaryEdit="0" left="0" path="application/inc/bsp.h" selected="0" top="0" codecName="UTF-8"/>
  </Files>
- <ARMCrossStudioWindow activeProject="izn" fileDialogDefaultFilter="*.asm;*.s;*.inc" autoConnectTarget="J-Link" buildConfiguration="nrf52832_xxaa" sessionSettings="" debugSearchFileMap="C:/Users/alexa/Desktop/izn_nrf/nRF5_SDK/components/toolchain/ses/ses_nrf52_Vectors.s&#xa;&#xa;C:/Users/alexa/Desktop/izn_nrf/nRF5_SDK/components/toolchain/ses/ses_nRF_Startup.s&#xa;" fileDialogInitialDirectory="C:/Users/alexa/Desktop/izn_nrf/application/inc" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="izn" fileDialogDefaultFilter="" autoConnectTarget="J-Link" buildConfiguration="nrf52832_xxaa" sessionSettings="" debugSearchFileMap="C:/Users/alexa/Desktop/izn_nrf/nRF5_SDK/components/toolchain/ses/ses_nrf52_Vectors.s&#xa;&#xa;C:/Users/alexa/Desktop/izn_nrf/nRF5_SDK/components/toolchain/ses/ses_nRF_Startup.s&#xa;" fileDialogInitialDirectory="C:/Users/Alex/Desktop/CodaNRF_local/CodaNRF/application/inc" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

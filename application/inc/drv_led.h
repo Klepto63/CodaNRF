@@ -10,7 +10,21 @@ typedef enum
     e_ledmodeBlinkFast
 }e_ledmode;
 
+
+typedef enum
+{
+    e_fsmModeUnkown = 0,
+    e_fsmModeNotConnected,
+    e_fsmModeConnected
+}e_fsmMode;
+
 void drv_led_init(void);
 void drv_led_set (e_ledmode ledmode);
+
+
+void drv_led_set_mode(e_fsmMode fsmMode);
+
+
+
 
 #endif

@@ -16,6 +16,9 @@
 #include "app_error.h"
 
 #include "drv_led.h"
+#include "drv_uart.h"
+
+
 
 s_accValue phareAccValue = {0};
 
@@ -47,23 +50,26 @@ void app_main_task(void *pArg)
     DEBUG("MAIN : init");
 
     drv_led_init();
-    drv_led_set(e_ledmodeBlinkFast);
+    drv_uart_init();
+    //drv_led_set(e_ledmodeBlinkFast);
     //drv_acc_init((t_cb) acc_cb);
     //drv_helmet_init((t_cb) hel_cb);
     
     vTaskDelay(500);
     //led
+
+    char msg[4] = {'5', '6', '\n', '\r'};
+
     while(1)
     {
         DEBUG("hello");
         vTaskDelay(1000); 
+        drv_uart_send(msg,2);
     }
-    
 
     while(1)
     {
         s_message msg;
-
         BaseType_t ret = xQueueReceive(mainQueueHandle,
                                        &msg,
                                        portMAX_DELAY);
@@ -83,8 +89,6 @@ void app_main_task(void *pArg)
         }
     }
 }
-
-          
 
 static void rtos_init(void)
 {
